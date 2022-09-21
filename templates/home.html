@@ -1,0 +1,15 @@
+<h1>APPLICATION FLASK EN COURS D'EXÉCUTION</h1>
+<h2>Veuillez saisir vos dimensions de fleurs ci-dessous :</h2>
+<form  method="POST">
+    {# Cette balise hidden_tag est une fonctionnalité de sécurité CSRF. #}
+    {{ form.hidden_tag() }}
+    {{ form.sep_len.label }} {{form.sep_len}}
+    <br>
+    {{ form.sep_wid.label}} {{form.sep_wid}}
+    <br>
+    {{form.pet_len.label}}{{form.pet_len}}
+    <br>
+    {{form.pet_wid.label}}{{form.pet_wid}}
+    <br>
+    {{ form.submit() }}
+</form>
